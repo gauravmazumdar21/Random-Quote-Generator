@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: grid;
+    grid-template-rows: 24% 14% 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+#quotesArea{
+    margin: 20px;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+#authorName{
+    align-self: self-start;
+    justify-self: center;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#buttonArea{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    align-self: self-start;
+    justify-self: center;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#buttonArea:hover{
+    background-color: black;
+    color: white;
+}
