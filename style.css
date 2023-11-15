@@ -1,18 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-.container{
+.container {
     display: grid;
     grid-template-rows: 24% 14% 1fr;
     width: 100vw;
     height: 100vh;
 }
 
-#quotesArea{
+#quotesArea {
     margin: 20px;
     padding: 10px;
     align-self: center;
@@ -21,14 +20,14 @@
     border-radius: 10px;
 }
 
-#authorName{
+#authorName {
     align-self: self-start;
     justify-self: center;
     border-radius: 10px;
     font-size: large;
 }
 
-#buttonArea{
+#buttonArea {
     background-color: white;
     padding: 10px;
     border-radius: 15px;
@@ -38,7 +37,32 @@
     border: 1px solid black;
 }
 
-#buttonArea:hover{
+#buttonArea:hover {
     background-color: black;
     color: white;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-rows: 30% 20% 1fr;
+    }
+
+    #quotesArea {
+        font-size: small;
+    }
+
+    #authorName {
+        font-size: smaller;
+    }
+
+    #buttonArea {
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        grid-template-rows: 20% 12% 1fr;
+    }
 }
